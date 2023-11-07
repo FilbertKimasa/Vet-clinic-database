@@ -1,8 +1,3 @@
-# curriculum-databases-projects-template
-
-> This template should be used for database related projects at Microverse.
-> Generate your own repository, update this README and edit all files content while working on projects. You should not be adding any new files unless asked otherwise.
-
 ## Getting Started
 
 This repository includes files with plain SQL that can be used to recreate a database:
@@ -53,9 +48,9 @@ To get a local copy up and running, follow these steps.
 
 ### Prerequisites
 
-In order to run this project you need:
+To run this project you need:
 
-Postgresql installed and configured properly. <a href="https://www.postgresql.org/docs/current/tutorial-install.html">Guide</a>
+⚡ Postgresql installed and configured properly. <a href="https://www.postgresql.org/docs/current/tutorial-install.html">Guide</a>
 
 ### Setup
 
@@ -108,8 +103,8 @@ Feel free to check the [issues page](https://github.com/FilbertKimasa/Vet-clinic
 
 ## ⭐️ Show your support <a name="support"></a>
 
-If you like this project please give it a star and follow the authers on github linkedIn and Twitter
-, you are also welcome for any suggestions🙏
+If you like this project please give it a star and follow me on github linkedIn and Twitter
+, you are also welcome to any suggestions🙏
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
