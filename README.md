@@ -79,8 +79,6 @@ Query inserted data using sample queries in 'queries.sql'
 
 ## 👥 Authors <a name="authors"></a>
 
-> Mention all of the collaborators of this project.
-
 👤 **Filbert Kimasa**
 
 - GitHub: [@githubhandle](https://github.com/FilbertKimasa)
