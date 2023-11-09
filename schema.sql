@@ -9,5 +9,6 @@ date_of_birth DATE NOT NULL,
 escape_attempts INT NOT NULL,
 neutered bool NOT NULL,
 weight_kg decimal NOT NULL,
-species VARCHAR(255);
 );
+
+ALTER TABLE animals ADD species varchar(255);

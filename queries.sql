@@ -18,6 +18,44 @@ SELECT * FROM animals WHERE weight_kg BETWEEN  10.4 and 17.3;
 
 -- transaction start
 
+ BEGIN;
+ 
+ UPDATE animals
+ SET species = 'unspecified';
+ 
+ ROLLBACK;
+ 
+ COMMIT;
+
+--  transaction end
+
+-- transaction start
+BEGIN;
+ 
+UPDATE animals
+ SET species = 'digimon'
+ WHERE name LIKE '%mon';
+ 
+UPDATE animals
+ SET species = 'pokemon'
+ WHERE species IS NULL;
+ 
+COMMIT;
+
+--  transaction end
+
+-- transaction start
+
+ BEGIN;
+ 
+ DELETE FROM animals;
+ 
+ ROLLBACK;
+
+--  transaction end
+
+-- transaction start
+
 BEGIN;
 
 DELETE FROM animals WHERE date_of_birth > '2022, 01, 01';
@@ -69,4 +107,6 @@ SELECT
  FROM
     animals
  WHERE
-    date_of_birth BETWEEN '1990, 01, 01' AND '2000, 12, 31';
+    date_of_birth  >= '1990/01/01' AND date_of_birth <= '2000/12/31'
+ GROUP BY
+    species;
