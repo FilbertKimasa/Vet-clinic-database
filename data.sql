@@ -33,6 +33,8 @@ VALUES ('Blossom', '1998-10-13', 3, true, 17);
 INSERT INTO animals (name, date_of_birth, escape_attempts, neutered, weight_kg)
 VALUES ('Ditto', '2022-05-14', 4, true, 22);
 
+-- Populate owners table
+
 INSERT INTO owners (full_name, age)
 VALUES ('Sam Smith', 34);
 
@@ -50,3 +52,20 @@ VALUES ('Dean Winchester', 14);
 
 INSERT INTO owners (full_name, age)
 VALUES ('Jodie Whittak', 38);
+
+-- Populate species table
+
+INSERT INTO species (name)
+VALUES ('Pokemon');
+
+INSERT INTO species (name)
+VALUES ('Digimon');
+
+-- Update animals with species_id based on name
+UPDATE animals
+SET species_id = (
+    CASE 
+        WHEN name LIKE '%mon' THEN (SELECT id FROM species WHERE name = 'Digimon')
+        ELSE (SELECT id FROM species WHERE name = 'Pokemon')
+    END
+);
