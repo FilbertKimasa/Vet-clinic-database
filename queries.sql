@@ -33,3 +33,40 @@ UPDATE animals SET weight_kg = weight_kg*-1 WHERE weight_kg < 0;
 COMMIT;
 
 -- transaction end
+
+SELECT COUNT(*) FROM animals;
+
+SELECT COUNT(*) FROM animals WHERE escape_attempts = 0;
+
+SELECT
+     neutered,
+     COUNT(*) AS total_animals,
+     SUM(escape_attempts) AS total_escapes
+ FROM
+     animals
+ GROUP BY
+     neutered;
+
+SELECT
+     neutered,
+     COUNT(*) AS total_animals,
+     SUM(escape_attempts) AS total_escapes
+ FROM
+     animals
+ GROUP BY
+     neutered;
+
+SELECT
+    species,
+    MIN(weight_kg) AS min_weight, MAX(weight_kg) AS max_weight
+ FROM
+    animals
+ GROUP BY
+    species;
+
+SELECT
+    AVG(escape_attempts) AS average_escape_attempts
+ FROM
+    animals
+ WHERE
+    date_of_birth BETWEEN '1990, 01, 01' AND '2000, 12, 31';
