@@ -1,11 +1,3 @@
-## Getting Started
-
-This repository includes files with plain SQL that can be used to recreate a database:
-
-- Use [schema.sql](./schema.sql) to create all tables.
-- Use [data.sql](./data.sql) to populate tables with sample data.
-- Check [queries.sql](./queries.sql) for examples of queries that can be run on a newly created database. **Important note: this file might include queries that make changes in the database (e.g., remove records). Use them responsibly!**
-
 <a name="readme-top"></a>
 
 # 📗 Table of Contents
@@ -13,11 +5,13 @@ This repository includes files with plain SQL that can be used to recreate a dat
 - [📖 About the Project](#about-project)
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
+    - [Key Features](#key-features)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
   - [Usage](#usage)
 - [👥 Authors](#authors)
+- [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
 - [🙏 Acknowledgements](#acknowledgements)
@@ -40,6 +34,16 @@ This repository includes files with plain SQL that can be used to recreate a dat
   </ul>
 </details>
 
+<!-- key features -->
+
+### Key Features <a name="key-features"></a>
+
+- **Create database**
+- **Update database schema**
+- **Populate the database eith sample data**
+- **Contains some queries to select some data**
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 <!-- GETTING STARTED -->
 
 ## 💻 Getting Started <a name="getting-started"></a>
@@ -86,6 +90,14 @@ Query inserted data using sample queries in 'queries.sql'
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/filbert-daniel-32b118143)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- Feture features -->
+
+## 🔭 Future Features <a name="future-features"></a>
+
+- [ ] **Host the database in the cloud**
+- [ ] **Add some more data**
+- [ ] **Add some more queries**
 
 <!-- CONTRIBUTING -->
 
