@@ -82,3 +82,17 @@ SET owner_id = (
         WHEN name IN ('Angemon', 'Boarmon') THEN (SELECT id FROM owners WHERE full_name = 'Dean Winchester')
     END
 );
+
+-- Populate data into vets
+
+INSERT INTO vets (name, age, date_of_graduation)
+VALUES ('William Thatcher', 45, '2000-04-23');
+
+INSERT INTO vets (name, age, date_of_graduation)
+VALUES ('Maisy Smith', 26, '2019-01-17');
+
+INSERT INTO vets (name, age, date_of_graduation)
+VALUES ('Stephanie Mendez', 64, '1981-05-04');
+
+INSERT INTO vets (name, age, date_of_graduation)
+VALUES ('Jack Harkness', 38, '2008-06-08');
