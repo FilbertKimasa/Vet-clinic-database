@@ -23,6 +23,8 @@
 
 **[vet clinic database]** is focused on creating a relational database for managing information about animals. It enables database creation, input data about animals, and update their information as needed.
 
+[See the ERD](./ERD.png)
+
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
