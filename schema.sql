@@ -55,3 +55,5 @@ CREATE TABLE visits (
 );
 
  CREATE INDEX ON visits(animal_id);
+
+ ANALYZE visits;
