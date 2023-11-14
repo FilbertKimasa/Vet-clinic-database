@@ -1,7 +1,5 @@
 /* Database schema to keep the structure of entire database. */
 
-CREATE DATABASE vet_clinic;
-
 CREATE TABLE animals(
 id  SERIAL PRIMARY KEY,
 name VARCHAR(100) NOT NULL,
@@ -53,3 +51,13 @@ CREATE TABLE visits (
     visit_date DATE,
     PRIMARY KEY (animal_id, vet_id, visit_date)
 );
+
+CREATE INDEX ON visits(animal_id);
+
+CREATE INDEX ON visits (vet_id);
+
+CREATE INDEX ON owners (email);
+
+ANALYZE visits;
+
+ANALYZE owners;
