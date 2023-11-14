@@ -59,3 +59,5 @@ CREATE INDEX ON visits (vet_id);
 CREATE INDEX ON owners (email);
 
 ANALYZE visits;
+
+ANALYZE owners;
